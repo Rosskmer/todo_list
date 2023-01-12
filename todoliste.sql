@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 12 jan. 2023 à 16:21
+-- Généré le : jeu. 12 jan. 2023 à 19:42
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -18,22 +18,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `todolist`
+-- Base de données : `todoliste`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `liste`
+-- Structure de la table `course`
 --
 
-DROP TABLE IF EXISTS `liste`;
-CREATE TABLE IF NOT EXISTS `liste` (
-  `IDLIST` int(11) NOT NULL AUTO_INCREMENT,
-  `TITRE` varchar(100) NOT NULL,
-  `LIST` varchar(100) NOT NULL,
-  PRIMARY KEY (`IDLIST`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `course`;
+CREATE TABLE IF NOT EXISTS `course` (
+  `ID` int(6) NOT NULL AUTO_INCREMENT,
+  `TITRE` varchar(20) NOT NULL,
+  `LIST` varchar(20) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `course`
+--
+
+INSERT INTO `course` (`ID`, `TITRE`, `LIST`) VALUES
+(1, 'liste 1', 'riz \r\npÃ¢te\r\npoisson'),
+(2, 'liste 2', 'pain\r\nsaucisse\r\n');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
