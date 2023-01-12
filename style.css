@@ -1,0 +1,17 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+  }
